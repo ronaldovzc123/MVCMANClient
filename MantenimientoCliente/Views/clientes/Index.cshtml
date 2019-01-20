@@ -1,0 +1,69 @@
+﻿@model IEnumerable<MantenimientoCliente.Models.cliente>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Lista Clientes</h2>
+
+<p>
+    @Html.ActionLink("Agregar a la lista", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ruc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.razonSocial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.enviar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.conCopia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dias)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.agregarGlosa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.observaciones)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ruc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.razonSocial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.enviar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.conCopia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dias)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.agregarGlosa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.observaciones)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ruc }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ruc }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ruc })
+        </td>
+    </tr>
+}
+
+</table>

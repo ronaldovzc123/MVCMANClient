@@ -1,0 +1,42 @@
+Comandos git Hub
+------------------
+introduccion:
+'''''''''''''
+git contiene 3 listados:
+-working directory, donde se trabajan todos los archivos.
+-staging area, donde esta los archivos que se preparan para guardar.
+-repository, donde se guarda el codigo.
+------------------------------------------------------------------------   
+
+Comandos:
+---------
+
+-cd (me manda a una carpeta) ejemplo "cd ~/Desktop"
+-psw (para ver en que directorio me encuentro)
+-git init para inicializar un nuevo proyecto (aqui se empieza a trabajar en el working directory)
+-git status, para ver el estado de nuestros archivos
+-git add, para agregar un archivo al sataging area
+-git commit, para crear el primer punto de control del proyecto
+(se escribe " git commit -m "My Commit Message" ")
+-git config --global user.email "ronaldov_zwlada@hotmail.com"
+-git config --global user.name "ronaldo"
+-git log, para ver todos los commits que emos creado
+-git checkout -- <file>, para revertir los cambios de los archivos
+-git diff <nombrefile>, para ver las diferencias de las modificaciones que tuvo el archivo
+-git branch, muestra la carpeta master, que quiere decir que tengo un solo proyecto.
+
+
+para crear versiones alternativas del mismo proyecto
+-------------------------------------------------------
+
+-git branch "nombre" para crear carpetas alternativas.
+-git checkout para cambiar de carpeta original a alternativa
+
+git con github para subir al repositorio
+-------------------------------------------
+
+git remote  add origin http//.....
+
+git pull --rebase origin master 
+
+git push u- origin master 

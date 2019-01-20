@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="bd_ClienteModelStoreContainer" CdmEntityContainer="bd_ClienteEntities">
+    <EntitySetMapping Name="clientes">
+      <EntityTypeMapping TypeName="bd_ClienteModel.cliente">
+        <MappingFragment StoreEntitySet="cliente">
+          <ScalarProperty Name="ruc" ColumnName="ruc" />
+          <ScalarProperty Name="razonSocial" ColumnName="razonSocial" />
+          <ScalarProperty Name="enviar" ColumnName="enviar" />
+          <ScalarProperty Name="conCopia" ColumnName="conCopia" />
+          <ScalarProperty Name="dias" ColumnName="dias" />
+          <ScalarProperty Name="agregarGlosa" ColumnName="agregarGlosa" />
+          <ScalarProperty Name="observaciones" ColumnName="observaciones" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

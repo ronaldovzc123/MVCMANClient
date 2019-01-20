@@ -1,0 +1,66 @@
+﻿@model MantenimientoCliente.Models.cliente
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>cliente</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.razonSocial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.razonSocial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.enviar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.enviar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.conCopia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.conCopia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dias)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dias)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.agregarGlosa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.agregarGlosa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.observaciones)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.observaciones)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ruc }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
